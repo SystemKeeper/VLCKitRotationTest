@@ -24,25 +24,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ux5-TF-1HX">
-                                <rect key="frame" x="137.66666666666666" y="444.66666666666669" width="118" height="35"/>
+                                <rect key="frame" x="137.66666666666666" y="473.66666666666669" width="118" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Open Dialog"/>
                                 <connections>
                                     <action selector="openDialogTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vla-oq-exG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eml-mL-94Z">
+                                <rect key="frame" x="175.66666666666666" y="444.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zg6-5D-tGs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vih-OI-FvB"/>
+                            <constraint firstItem="Eml-mL-94Z" firstAttribute="top" secondItem="zg6-5D-tGs" secondAttribute="bottom" constant="8" id="Wh7-6F-POI"/>
+                            <constraint firstItem="Eml-mL-94Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eek-t2-G0z"/>
                             <constraint firstItem="Ux5-TF-1HX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nPV-Q5-UXO"/>
-                            <constraint firstItem="Ux5-TF-1HX" firstAttribute="top" secondItem="zg6-5D-tGs" secondAttribute="bottom" constant="8" id="njf-Wz-cVq"/>
+                            <constraint firstItem="Ux5-TF-1HX" firstAttribute="top" secondItem="Eml-mL-94Z" secondAttribute="bottom" constant="8" id="njf-Wz-cVq"/>
                             <constraint firstItem="zg6-5D-tGs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ybc-Pd-b5f"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="helloLabel" destination="zg6-5D-tGs" id="JPy-L1-Pkf"/>
+                        <outlet property="motionLabel" destination="Eml-mL-94Z" id="1YA-SN-Ahf"/>
+                        <outlet property="orientationLabel" destination="zg6-5D-tGs" id="JPy-L1-Pkf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
